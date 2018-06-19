@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <form #frm="ngForm">
+    <!--   con = Container  for items in the form-->
+    <div class="con">
+    <header class="head-form">
+       <h2>Sign Up</h2>
+    </header>
+
+    <div class="personal">
+      <h1>Personal Details</h1>
+      <!--   first name Input-->
+      <input class="form-input" id="txt-input" type="text" placeholder="First Name" required>
+      <br>
+      <!--   last name Input-->
+      <input class="form-input" id="txt-input" type="text" placeholder="Last Name" required>
+      <br>
+      <!--   SA ID Input-->
+      <input class="form-input" id="txt-input" type="text" placeholder="SA ID" required>
+      <br>
+      <!--   birthday Input-->
+      <input class="form-input" id="txt-input" type="date" placeholder="Birthday" required>
+      <br>
+      <!--   gender Input-->
+      <input LIST="browsers" class="form-input" id="txt-input" type="text" placeholder="Gender" required>
+      <datalist id="browsers">
+        <option value="Male">
+        <option value="Female">
+      </datalist>
+      <br>           
+    </div>
+    <hr>
+    <div class="contact">
+        <h1>Contact Details</h1>
+        <!--   email Input-->
+        <input class="form-input" id="txt-input" type="text" placeholder="Email" required>
+        <br>
+        <!--   mobile Input-->
+        <input class="form-input" id="txt-input" type="text" placeholder="Mobile" required>
+        <br>
+        <!--   address Input-->
+        <input class="form-input" id="txt-input" type="text" placeholder="Address" required>
+        <br>
+        <!--   city Input-->
+        <input class="form-input" id="txt-input" type="text" placeholder="City" required>
+        <br>
+        <!--   postcode Input-->
+        <input class="form-input" id="txt-input" type="text" placeholder="Postcode" required>
+        <br>           
+    </div>
+    <hr>
+    <div class="login">
+      <h1>Create Sign In</h1>
+      <!--   Password Input-->
+      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+      <br>
+      <!--   Confirm Password Input-->
+      <input class="form-input" type="password" placeholder="Confirm Password" id="pwd"  name="confirm-password" required>
+      <br>
+      </div>
+        <!--   submit button -->
+      <div class="input">
+              <button routerLink="/signin"class="btn submits submit" style="display: block; margin: 0 auto;">Sign Up</button>
+      </div>
+    </div>
+ </form>
+</body>
+</html>

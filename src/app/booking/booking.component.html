@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+ 
+ 
+    <form>
+        <header class="head-form">
+                <h2>Book Now</h2>
+        </header>
+        <table>
+          <tr>
+            <td>
+                <div class="input">
+                  <label for="Checkin Date">Checkin Date</label>
+                    <input class="form-input" type="date" required #checkin>
+                    <br>
+                </div>
+            </td>
+            <td>
+                <div class="input">
+                    <label for="Checkout Date">Checkout Date</label>
+                    <input class="form-input" type="date" required #checkout>
+                    <br>
+                </div>
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td>
+                <div class="input">
+                    <label for="room">Room</label>
+                  
+                    <input class="form-input" type="number" required #room>
+                    <br>
+                </div>
+            </td>
+            <td>
+                <div class="input">
+                    <label for="adult">Adult</label>
+                    <input class="form-input" type="number" required #adult>
+                    <br>
+                </div>
+            </td>
+            <td>
+                <div class="input">
+                    <label for="child">Child</label>
+                    <input class="form-input" type="number" required #child>
+                    <br>
+                </div>
+            </td>
+          </tr>
+        </table>
+        <div class="input">
+                <button (click)= "Book(checkin.value, checkout.value, room.value , adult.value, child.value)" id="displayText" style="display: block; margin: 0 auto;">Book</button>
+        </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="summary">
+    <header class="head-form">
+        <h2>Summary Room 2</h2>
+    </header>
+    <table>
+      <tr>
+        <td><i class="material-icons" style="font-size:36px">date_range</i> {{checkin}}-{{checkout}}</td>
+        <td><i class="material-icons" style="font-size:36px">airline_seat_individual_suite</i> {{room}}</td>
+        <td><i class="fa fa-male" style="font-size:36px"></i>{{adult}}</td>
+        <td><i class="material-icons" style="font-size:36px">child_care</i>{{child}}</td>
+      </tr>
+    </table>     
+</div>
+<form action="/action_page.php" method="get">
+  <div class="choice">
+    <table>
+      <tr>
+        <td><img src="../../assets/images/bed.jpg" width="300px" height="300px"></td>
+        <td>
+          <h3>Studio Nonsmoking 1 King Bed</h3>
+          <p>
+            As well as complimentary wi fi a comfortable workspace 
+            and other standard amenities this large studio gives you 
+            42 square meters of floor space to really stretch out. The kitchenette lets you prepare 
+            your own meals so you can feel at home even while admiring a panoramic view of dubai.
+          </p>
+          R1500 per night
+        </td>
+        <td><button (click)="storeAndChange(1)">{{btnRoom1}}</button></td>
+      </tr>
+    </table>
+  </div>
+  <div class="choice">
+    <table>
+    <tr>
+      <td><img src="../../assets/images/room7.jpg" width="300px" height="300px"></td>
+      <td>
+          <h2>1 King Bed Nonsmoking</h2>
+          <p>
+              Cool cozy and comfortable in shades of cream this king bed room is a peaceful haven for work and relaxation. 
+              You can prepare for a meeting with a desk and high speed wi fi then watch cable tv with a coffee or drink from the minibar.
+              Refresh with eco nature amenities loofah and shaving kit.
+          </p>
+          R1200 per nigth
+      </td>
+      <td><button (click)="storeAndChange(2)">{{btnRoom2}}</button></td>
+    </tr>
+  </table>
+</div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/room.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3>King Bed Leisure Nonsmoking</h3>
+              <p>Enjoy a comfortable stay in our Kng Bed Leisure Non Smoking Room.
+                 Air conditioned and can house up to two non-smoking guests.
+                 Features a cozy seating area, high speed wifi, flat screen TV,
+                 minibar, tea and coffee making facilities,
+                 bottled water, iron and iron board, digital safe,
+                 bathtub and shower
+                </p>
+                 R550 per night
+            </td>
+            <td><button (click)="storeAndChange(3)">{{btnRoom3}}</button></td>
+          </tr>
+        </table>
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/party-event-in-bali-hotel-ubud-interior-deco-resort_bali-style-interior-design_interior-design_interior-design-tumblr-definition-salary-school-nyc-free-software-indu.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3> 1 King Bed Premium Room</h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R1600 per night
+            </td>
+            <td><button (click)="storeAndChange(4)">{{btnRoom4}}</button></td>
+          </tr>
+      </table>
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/room9.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3> Luxury Suite </h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R1650 per night
+            </td>
+            <td><button (click)="storeAndChange(5)">{{btnRoom5}}</button></td>
+          </tr>
+      </table>    
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/parakkat-nature-hotels-and-resorts-pallivasal-idukki-hotels-4kfbqqf.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3>South-East Suite</h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R2000 per night
+            </td>
+            <td><button (click)="storeAndChange(6)">{{btnRoom6}}</button></td>
+          </tr>
+      </table>    
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/parakkat-nature-hotels-and-resorts-pallivasal-idukki-hotels-z62pod.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3>King Bed Premium Suite</h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R1400 per night
+            </td>
+            <td><button (click)="storeAndChange(7)">{{btnRoom7}}</button></td>
+          </tr>
+      </table>    
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/port-nature-luxury-resort-hotel-spa-7.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3> 2 double Beds Premium Room</h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R1999 per night
+            </td>
+            <td><button (click)="storeAndChange(8)">{{btnRoom8}}</button></td>
+          </tr>
+      </table>    
+  </div>
+  <div class="choice">
+      <table>
+          <tr>
+            <td><img src="../../assets/images/sea-nature-rayong-resort-and-hotel-3.jpg" width="300px" height="300px"></td>
+            <td>
+              <h3> Two 3/4 Beds Premium Room</h3>
+              <p>
+                  A vibrant and fresh welcoming with a wow view of the city skyline, 
+                  the 36 sqm premium deluxe room features king bedding, 
+                  complimentary wifi, work desk, tea and coffee making facilities,
+                  and 24 hour room service.
+              </p>
+              R1800 per night
+            </td>
+            <td><button (click)="storeAndChange(9)">{{btnRoom9}}</button></td>
+          </tr>
+      </table>    
+  </div>
+  <button  routerLink="/user-bookings" style="display: block; margin: 0 auto;">Select Rooms</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    margin: 5%;
+    padding: 2em;
+    background-color: #fef4e8;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+	flex-direction: column;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navigation {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    box-align: center;
+    border-radius: 12px;
+}
+
+h1, h2, h3, {
+    color: #fef4e8;
+    
+}
+
+header {
+    background-color: #970747;
+    padding: 3em;
+}
+
+#headText{
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background-color: #970747;
+    padding: 2%;
+    margin-top: 5px;;
+}
+
+.container{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/*.bg{
+    background-repeat: no-repeat, repeat;
+    background-image: url("../assets/images/movies-red.jpg");
+    background-blend-mode: lighten;
+    height: 1000px;
+}*/
+
+
+
+
+
+

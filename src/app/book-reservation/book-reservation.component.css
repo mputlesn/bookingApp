@@ -1,0 +1,72 @@
+.summary {
+    box-shadow: 0 9px 50px  #970747;  
+    width: 1000px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    padding: 5%;
+}
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #f1bcd4;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 2em;
+    letter-spacing: 0.05em;
+}
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+header {
+    margin: 2%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    width: 60%; 
+    align-items: center;
+    
+}
+
+#th{
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+}
